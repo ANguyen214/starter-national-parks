@@ -241,3 +241,11 @@ const ratingSorterHandler = (event) => {
 const ratingSorter = document.querySelector("#rating-sorter");
 ratingSorter.addEventListener("click", ratingSorterHandler);
 
+//To check if DOM is parsed and loaded
+console.log("Before!");
+
+window.addEventListener("DOMContentLoaded", (event) => {
+  console.log("Loaded!");
+});
+
+console.log("After!");
